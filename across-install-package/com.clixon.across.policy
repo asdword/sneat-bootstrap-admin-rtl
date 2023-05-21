@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+<policyconfig>
+
+ <vendor>across</vendor>
+  <vendor_url>http://www.acrosscenter.com</vendor_url>
+
+ <action id="com.clixon.across">
+    <description>Run across</description>
+    <description xml:lang="da">Kør across</description>
+    <description xml:lang="de">Führen Sie across aus</description>
+    <description xml:lang="es">Ejecute across</description>
+    <description xml:lang="fr">Exécutez across</description>
+    <description xml:lang="it">Esegui across</description>
+    <description xml:lang="ja">across 実行</description>
+    <description xml:lang="ko">across 실행</description>
+    <description xml:lang="nl">across uitvoeren</description>
+    <description xml:lang="no">Kjør across</description>
+    <description xml:lang="pt">Execute o across</description>
+    <description xml:lang="ru">Запустите across</description>
+    <description xml:lang="sv">Kör across</description>
+    <description xml:lang="tr">across'yi çalıştır</description>
+    <description xml:lang="zh_TW">運行 across</description>
+    <description xml:lang="zh_HK">運行 across</description>
+    <description xml:lang="zh_MO">運行 across</description>
+    <description xml:lang="zh_CN">运行 across</description>
+    <description xml:lang="zh_SG">运行 across</description>
+    <message>Authentication is required to register across to auto-start</message>
+    <message xml:lang="da">Autentificering er påkrævet for at registrere across til automatisk start</message>
+    <message xml:lang="de">Eine Authentifizierung ist erforderlich, um across für den automatischen Start zu registrieren</message>
+    <message xml:lang="es">Se requiere autenticación para registrar across para iniciar automáticamente</message>
+    <message xml:lang="fr">Une authentification est requise pour enregistrer across pour démarrer automatiquement</message>
+    <message xml:lang="it">È richiesta l'autenticazione per registrare across per l'avvio automatico</message>
+    <message xml:lang="ja">acrossが自動起動されるように登録するために権限が必要</message>
+    <message xml:lang="ko">across가 자동 시작되게 등록하기 위해 권한 필요</message>
+    <message xml:lang="nl">Verificatie is vereist om across te registreren om automatisch te starten</message>
+    <message xml:lang="no">Autentisering er nødvendig for å registrere across for automatisk start</message>
+    <message xml:lang="pt">É necessária autenticação para registrar o across para iniciar automaticamente</message>
+    <message xml:lang="ru">Требуется аутентификация для регистрации across для автозапуска</message>
+    <message xml:lang="sv">Autentisering krävs för att registrera across för automatisk start</message>
+    <message xml:lang="tr">across'i otomatik olarak başlatmak için kaydetmek için kimlik doğrulaması gerekiyor</message>
+    <message xml:lang="zh_TW">需要驗證才能註冊 across 以自動啟動</message>
+    <message xml:lang="zh_HK">需要驗證才能註冊 across 以自動啟動</message>
+    <message xml:lang="zh_MO">需要驗證才能註冊 across 以自動啟動</message>
+    <message xml:lang="zh_CN">需要验证才能注册 across 以自动启动</message>
+    <message xml:lang="zh_SG">需要验证才能注册 across 以自动启动</message>
+    <icon_name>across-Across</icon_name>
+    <defaults>
+      <allow_any>no</allow_any>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_self_keep</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/local/bin/across/AcrossCenter</annotate>
+  </action>
+
+</policyconfig>

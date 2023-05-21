@@ -1,0 +1,35 @@
+[Unit]
+Description=acrossd
+Requires=display-manager.service
+After=display-manager.service
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+ExecStart=/usr/local/bin/across/acrossd
+KillMode=process
+
+# Set ROOTCA_CERT_DIR to the directory path containing root certs.
+# The default value is:
+#   /usr/local/share/ca-certificates           for Debian/Ubuntu,
+#   /etc/pki/ca-trust/source/anchors           for RedHat/CentOS,
+#   /etc/ca-certificates/trust-source/anchors  for Arch
+# If the default value is not correct, or you are using another linux,
+# set the following environment variable.
+
+#Environment="ROOTCA_CERT_DIR=/rootca/dir/path"
+
+# Set CERT_UPDATE_CMD to the command line to update certificates cache
+# to register the cert that across will use.
+# The default value is:
+#   update-ca-certificates    for Debian/Ubuntu,
+#   update-ca-trust extract   for RedHat/CentOS,
+#   trust extract-compat      for Arch
+# If the default value is not correct, or you are using another linux,
+# set the following environment variable.
+
+#Environment="CERT_UPDATE_CMD=update cmd"
+
+[Install]
+WantedBy=graphical.target
